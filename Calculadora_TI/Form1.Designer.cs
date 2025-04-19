@@ -38,6 +38,7 @@
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnRestar = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNum1
@@ -112,6 +113,7 @@
             this.btnRestar.TabIndex = 7;
             this.btnRestar.Text = "Restar";
             this.btnRestar.UseVisualStyleBackColor = true;
+            this.btnRestar.Click += new System.EventHandler(this.btnRestar_Click_1);
             // 
             // btnMultiplicar
             // 
@@ -121,12 +123,25 @@
             this.btnMultiplicar.TabIndex = 8;
             this.btnMultiplicar.Text = "Multiplicar";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click_1);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(113, 162);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(60, 27);
+            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(318, 295);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btnRestar);
             this.Controls.Add(this.btnSumar);
@@ -154,6 +169,7 @@
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnRestar;
         private System.Windows.Forms.Button btnMultiplicar;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
